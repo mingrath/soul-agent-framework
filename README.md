@@ -17,6 +17,10 @@
 
 ---
 
+![Demo](demo.svg)
+
+---
+
 ## What is this?
 
 Soul Agent Framework is an **opinionated, file-based architecture** for configuring AI agents entirely through markdown files. Instead of writing code to define agent behavior, you write prose.

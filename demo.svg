@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="580" viewBox="0 0 800 580">
+  <defs>
+    <style>
+      .bg { fill: #1e1e2e; }
+      .chrome { fill: #313244; }
+      .dot-red { fill: #f38ba8; }
+      .dot-yellow { fill: #f9e2af; }
+      .dot-green { fill: #a6e3a1; }
+      .title { fill: #cdd6f4; font-family: 'SF Pro Display', 'Helvetica Neue', sans-serif; font-size: 13px; }
+      text { font-family: 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', monospace; font-size: 13px; }
+      .white { fill: #cdd6f4; }
+      .gray { fill: #6c7086; }
+      .green { fill: #a6e3a1; }
+      .cyan { fill: #89dceb; }
+      .yellow { fill: #f9e2af; }
+      .mauve { fill: #cba6f7; }
+      .red { fill: #f38ba8; }
+      .blue { fill: #89b4fa; }
+      .peach { fill: #fab387; }
+      .dim { fill: #585b70; }
+      .teal { fill: #94e2d5; }
+      .box { fill: none; stroke: #45475a; stroke-width: 1; rx: 4; ry: 4; }
+      .box-fill { fill: #181825; stroke: #45475a; stroke-width: 1; rx: 4; ry: 4; }
+      .arrow { stroke: #6c7086; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead); }
+      .arrow-active { stroke: #a6e3a1; stroke-width: 1.5; fill: none; marker-end: url(#arrowhead-green); }
+    </style>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#6c7086"/>
+    </marker>
+    <marker id="arrowhead-green" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#a6e3a1"/>
+    </marker>
+  </defs>
+
+  <!-- Terminal window -->
+  <rect class="bg" width="800" height="580" rx="10" ry="10"/>
+
+  <!-- Title bar -->
+  <rect class="chrome" width="800" height="38" rx="10" ry="10"/>
+  <rect class="chrome" x="0" y="20" width="800" height="18"/>
+
+  <!-- Window dots -->
+  <circle class="dot-red" cx="20" cy="19" r="6"/>
+  <circle class="dot-yellow" cx="40" cy="19" r="6"/>
+  <circle class="dot-green" cx="60" cy="19" r="6"/>
+
+  <!-- Title -->
+  <text class="title" x="400" y="24" text-anchor="middle">Soul Agent Framework - Architecture</text>
+
+  <!-- Header -->
+  <text y="62" x="16">
+    <tspan class="mauve">soul-agent-framework</tspan>
+    <tspan class="dim"> — configure agents through markdown, not code</tspan>
+  </text>
+
+  <!-- Divider -->
+  <line x1="16" y1="72" x2="784" y2="72" stroke="#45475a" stroke-width="1"/>
+
+  <!-- BOOTSTRAP.md box -->
+  <rect x="300" y="84" width="200" height="34" class="box-fill"/>
+  <text y="106" x="400" text-anchor="middle">
+    <tspan class="yellow">BOOTSTRAP.md</tspan>
+  </text>
+
+  <!-- Arrow down from bootstrap -->
+  <line x1="400" y1="118" x2="400" y2="140" class="arrow-active"/>
+
+  <!-- Row 1: SOUL / USER / IDENTITY -->
+  <rect x="80" y="140" width="160" height="50" class="box-fill"/>
+  <text y="160" x="160" text-anchor="middle"><tspan class="peach">SOUL.md</tspan></text>
+  <text y="178" x="160" text-anchor="middle"><tspan class="dim" style="font-size: 11px;">personality + rules</tspan></text>
+
+  <rect x="320" y="140" width="160" height="50" class="box-fill"/>
+  <text y="160" x="400" text-anchor="middle"><tspan class="cyan">USER.md</tspan></text>
+  <text y="178" x="400" text-anchor="middle"><tspan class="dim" style="font-size: 11px;">who you serve</tspan></text>
+
+  <rect x="560" y="140" width="160" height="50" class="box-fill"/>
+  <text y="160" x="640" text-anchor="middle"><tspan class="blue">IDENTITY.md</tspan></text>
+  <text y="178" x="640" text-anchor="middle"><tspan class="dim" style="font-size: 11px;">name + presentation</tspan></text>
+
+  <!-- Arrows down -->
+  <line x1="160" y1="190" x2="160" y2="210" class="arrow"/>
+  <line x1="400" y1="190" x2="400" y2="210" class="arrow"/>
+  <line x1="640" y1="190" x2="640" y2="210" class="arrow"/>
+
+  <!-- Horizontal connector -->
+  <line x1="160" y1="210" x2="640" y2="210" stroke="#6c7086" stroke-width="1.5"/>
+  <line x1="400" y1="210" x2="400" y2="228" class="arrow"/>
+
+  <!-- Row 2: MEMORY / TOOLS / AGENTS -->
+  <rect x="80" y="228" width="160" height="50" class="box-fill"/>
+  <text y="248" x="160" text-anchor="middle"><tspan class="green">MEMORY.md</tspan></text>
+  <text y="266" x="160" text-anchor="middle"><tspan class="dim" style="font-size: 11px;">knowledge + facts</tspan></text>
+
+  <rect x="320" y="228" width="160" height="50" class="box-fill"/>
+  <text y="248" x="400" text-anchor="middle"><tspan class="teal">TOOLS.md</tspan></text>
+  <text y="266" x="400" text-anchor="middle"><tspan class="dim" style="font-size: 11px;">integrations + APIs</tspan></text>
+
+  <rect x="560" y="228" width="160" height="50" class="box-fill"/>
+  <text y="248" x="640" text-anchor="middle"><tspan class="mauve">AGENTS.md</tspan></text>
+  <text y="266" x="640" text-anchor="middle"><tspan class="dim" style="font-size: 11px;">team + delegation</tspan></text>
+
+  <!-- Arrows down from row 2 -->
+  <line x1="160" y1="278" x2="160" y2="298" class="arrow"/>
+  <line x1="400" y1="278" x2="400" y2="298" class="arrow"/>
+  <line x1="640" y1="278" x2="640" y2="298" class="arrow"/>
+
+  <!-- Horizontal connector -->
+  <line x1="160" y1="298" x2="640" y2="298" stroke="#6c7086" stroke-width="1.5"/>
+  <line x1="400" y1="298" x2="400" y2="316" class="arrow"/>
+
+  <!-- Skills row -->
+  <rect x="140" y="316" width="520" height="52" class="box-fill"/>
+  <text y="336" x="400" text-anchor="middle"><tspan class="yellow">Skills</tspan></text>
+  <text y="355" x="400" text-anchor="middle">
+    <tspan class="dim" style="font-size: 11px;">skills/rag/</tspan>
+    <tspan class="gray" style="font-size: 11px;">  |  </tspan>
+    <tspan class="dim" style="font-size: 11px;">skills/search/</tspan>
+    <tspan class="gray" style="font-size: 11px;">  |  </tspan>
+    <tspan class="dim" style="font-size: 11px;">skills/order-taking/</tspan>
+  </text>
+
+  <!-- Arrow to heartbeat -->
+  <line x1="400" y1="368" x2="400" y2="388" class="arrow"/>
+
+  <!-- HEARTBEAT box -->
+  <rect x="280" y="388" width="240" height="34" class="box-fill"/>
+  <text y="410" x="400" text-anchor="middle">
+    <tspan class="red">HEARTBEAT.md</tspan>
+    <tspan class="dim" style="font-size: 11px;">  recurring tasks</tspan>
+  </text>
+
+  <!-- Arrow to operational -->
+  <line x1="400" y1="422" x2="400" y2="444" class="arrow-active"/>
+
+  <!-- OPERATIONAL box -->
+  <rect x="100" y="444" width="600" height="50" rx="6" ry="6" fill="#1e3a2f" stroke="#a6e3a1" stroke-width="1.5"/>
+  <text y="474" x="400" text-anchor="middle">
+    <tspan class="green" style="font-size: 14px;">AGENT IS OPERATIONAL</tspan>
+  </text>
+
+  <!-- Bottom labels -->
+  <text y="520" x="160" text-anchor="middle"><tspan class="white" style="font-size: 11px;">Respond</tspan></text>
+  <text y="520" x="320" text-anchor="middle"><tspan class="white" style="font-size: 11px;">Delegate</tspan></text>
+  <text y="520" x="480" text-anchor="middle"><tspan class="white" style="font-size: 11px;">Remember</tspan></text>
+  <text y="520" x="640" text-anchor="middle"><tspan class="white" style="font-size: 11px;">Use Skills</tspan></text>
+
+  <!-- Arrows from operational to actions -->
+  <line x1="200" y1="494" x2="160" y2="508" class="arrow"/>
+  <line x1="320" y1="494" x2="320" y2="508" class="arrow"/>
+  <line x1="480" y1="494" x2="480" y2="508" class="arrow"/>
+  <line x1="600" y1="494" x2="640" y2="508" class="arrow"/>
+
+  <!-- Footer -->
+  <text y="555" x="400" text-anchor="middle">
+    <tspan class="dim" style="font-size: 11px;">markdown in  </tspan>
+    <tspan class="mauve" style="font-size: 11px;">-></tspan>
+    <tspan class="dim" style="font-size: 11px;">  agent behavior out  </tspan>
+    <tspan class="gray" style="font-size: 11px;">|  works with any LLM framework</tspan>
+  </text>
+</svg>
