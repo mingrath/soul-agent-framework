@@ -1,0 +1,50 @@
+{
+  "name": "menu-search",
+  "version": "1.0.0",
+  "description": "Search and filter the menu by category, dietary needs, ingredients, or popularity",
+  "triggers": [
+    "menu",
+    "what do you have",
+    "dairy-free",
+    "gluten-free",
+    "vegan",
+    "allergen",
+    "ingredients",
+    "what's in",
+    "options for",
+    "can I see"
+  ],
+  "requires": [
+    "menu_database"
+  ],
+  "agents": [
+    "barista-bot"
+  ],
+  "parameters": {
+    "category": {
+      "type": "string",
+      "default": "all",
+      "description": "Menu category filter"
+    },
+    "dietary": {
+      "type": "array",
+      "default": [],
+      "description": "Dietary requirement filters"
+    },
+    "max_results": {
+      "type": "integer",
+      "default": 5,
+      "description": "Maximum results to return"
+    },
+    "include_price": {
+      "type": "boolean",
+      "default": true,
+      "description": "Include prices in results"
+    },
+    "include_allergens": {
+      "type": "boolean",
+      "default": true,
+      "description": "Include allergen information"
+    }
+  }
+}

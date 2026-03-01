@@ -1,0 +1,39 @@
+{
+  "name": "rag",
+  "version": "1.0.0",
+  "description": "Retrieval-Augmented Generation — search a knowledge base to ground responses in facts",
+  "triggers": [
+    "search",
+    "find",
+    "look up",
+    "what is",
+    "tell me about",
+    "do we have",
+    "information about"
+  ],
+  "requires": [
+    "vector_store"
+  ],
+  "agents": [
+    "barista-bot",
+    "inventory-bot",
+    "manager-bot"
+  ],
+  "parameters": {
+    "top_k": {
+      "type": "integer",
+      "default": 5,
+      "description": "Number of chunks to retrieve"
+    },
+    "similarity_threshold": {
+      "type": "number",
+      "default": 0.7,
+      "description": "Minimum similarity score"
+    },
+    "sources": {
+      "type": "array",
+      "default": ["all"],
+      "description": "Knowledge bases to search"
+    }
+  }
+}

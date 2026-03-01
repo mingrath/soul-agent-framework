@@ -1,0 +1,33 @@
+{
+  "name": "order-taking",
+  "version": "1.0.0",
+  "description": "Guide customers through placing orders step by step with confirmation",
+  "triggers": [
+    "I'd like to order",
+    "can I get",
+    "I'll have",
+    "order",
+    "the usual",
+    "what do you recommend",
+    "I want"
+  ],
+  "requires": [
+    "pos_system",
+    "menu_database"
+  ],
+  "agents": [
+    "barista-bot"
+  ],
+  "parameters": {
+    "max_items": {
+      "type": "integer",
+      "default": 10,
+      "description": "Maximum items per order (catering orders require manager approval)"
+    },
+    "auto_upsell": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether to suggest add-ons"
+    }
+  }
+}
